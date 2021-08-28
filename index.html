@@ -17,7 +17,7 @@
 <button class="option" onclick="press(this)" ></button>
 <button class="option" onclick="press(this)" ></button></div>
 <script>
-var qu = [["Smallest planet in the solar system","Jupiter","Mars","Venus","Mercury" , 3]] ;
+var qu = [["Smallest planet in the solar system","Jupiter","Mars","Venus","Mercury" , 3] ] ;
 var option = document.getElementsByClassName("option") ;
 var question ;
 var num = 0 ;
@@ -35,7 +35,7 @@ option[1].innerHTML = question[2] ;
 option[2].innerHTML = question[3] ;
 option[3].innerHTML = question[4] ;
 option[question[5]].dataset.correct = "true" ;
-
+num++
 }
 function press(elem) {
 if (elem.dataset.correct == "true" ) {
