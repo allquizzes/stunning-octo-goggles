@@ -11,5 +11,26 @@
 <button class="option one" ></button>
 <button class="option one" ></button>
 <button class="option one" ></button>
+<script>
+var qu = [["f"," dd"," fr"," gg"," hu" , 1]] ;
+var option = document.getElementsByClassName("option") ;
+var question ;
+var num = 0 ;
+function change() {
+ for (i = 0 ; i < option.length ; i++) {
+option[i].disabled = false ;
+option[i].dataset.correct = "false" ;
+option[i].style.backgroundColor = "White" ;
+ }
+num++ ;
+question = qu[num] ;
+document.getElementById("question").innerHTML = question[0]
+option[0].innerHTML = question[1] ;
+option[1].innerHTML = question[2] ;
+option[2].innerHTML = question[3] ;
+option[3].innerHTML = question[4] ;
+option[question[5]].dataset.correct = "true" ;
+
+}
 </body>
 </html>
