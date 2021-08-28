@@ -7,10 +7,10 @@
 </head>
 <body onload ="change()">
 <p id="question" ></p>
-<button class="option" onclick="press()" ></button>
-<button class="option" onclick="press()" ></button>
-<button class="option" onclick="press()" ></button>
-<button class="option" onclick="press()" ></button>
+<button class="option" onclick="press(this)" ></button>
+<button class="option" onclick="press(this)" ></button>
+<button class="option" onclick="press(this)" ></button>
+<button class="option" onclick="press(this)" ></button>
 <script>
 var qu = [["f"," dd"," fr"," gg"," hu" , 1]] ;
 var option = document.getElementsByClassName("option") ;
@@ -32,7 +32,7 @@ option[3].innerHTML = question[4] ;
 option[question[5]].dataset.correct = "true" ;
 
 }
-function press() {
+function press(elem) {
 if (elem.dataset.correct == "true" ) {
 elem.style.backgroundColor = "lightgreen" ;
 } else {
