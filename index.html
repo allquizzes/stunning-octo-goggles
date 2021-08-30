@@ -20,9 +20,10 @@ padding: 10px ;
 <button class="option" onclick="press(this)" ></button>
 <button class="option" onclick="press(this)" ></button>
 <button class="option" onclick="press(this)" ></button></div>
-
+<div style="display: flex"><p id="won"></p><p id="lost"></p></div>
 <script>
-var qu = [["Smallest planet in the solar system","Jupiter","Mars","Venus","Mercury" , 3] , ["Largest planet in the Solar System", "Jupiter", "Uranus" , "Saturn" , "Neptune", 0] ] ;
+var qu = [["Smallest planet in the solar system","Jupiter","Mars","Venus","Mercury" , 3 , "Beginner - L.1" , "Beginner - L.2" ] ,
+ ["Largest planet in the Solar System", "Jupiter", "Uranus" , "Saturn" , "Neptune", 0 ,  "Beginner - L.1" , "Beginner - L.3"  ] ] ;
 var option = document.getElementsByClassName("option") ;
 var question ;
 var num = 0 ;
@@ -40,6 +41,8 @@ option[1].innerHTML = question[2] ;
 option[2].innerHTML = question[3] ;
 option[3].innerHTML = question[4] ;
 option[question[5]].dataset.correct = "true" ;
+document.getElementById("won").innerHTML = question[6] ;
+document.getElementById("lost").innerHTML = question[7] ;
 num++
 }
 function press(elem) {
