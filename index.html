@@ -14,6 +14,15 @@
 .option {
 padding: 10px ;
 }
+ #won ,#lost {
+  font-size : large ;
+ }
+ #won {
+ color : green ;
+ }
+ #lost {
+ color : red ;
+ }
 </style>
 </head>
 <body onload ="change()">
@@ -23,7 +32,7 @@ padding: 10px ;
 <button class="option" onclick="press(this)" ></button>
 <button class="option" onclick="press(this)" ></button>
 <button class="option" onclick="press(this)" ></button></div>
-<div style="display: flex ; justify-content:space-around ; font-family: 'Permanent Marker', cursive;"><p id="won"></p><p id="lost"></p></div>
+<div style="display: flex ; justify-content:space-around ; font-family: 'Permanent Marker', cursive;"><p id="lost"></p><p id="won"></p></div>
 <script>
 var qu = [["Smallest planet in the solar system","Jupiter","Mars","Venus","Mercury" , 3 , "Beginner - L.1" , "Beginner - L.2" ] ,
  ["Largest planet in the Solar System", "Jupiter", "Uranus" , "Saturn" , "Neptune", 0 ,  "Beginner - L.1" , "Beginner - L.3"  ] ] ;
